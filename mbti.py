@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
-key = st.secrets["key"]
+key = st.secrets['key']
 if not key:
     st.error("Please set your HuggingFace API key in the environment variable `key`.")
     st.stop()
