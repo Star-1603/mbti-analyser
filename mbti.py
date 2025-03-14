@@ -30,7 +30,7 @@ def main():
         prompt = st.text_area("Describe yourself in a few words or sentences:")
         prompt_template = (
     "Analyze the following description and determine the MBTI type "
-    "(Introvert vs. Extrovert, Intuition vs. Sensing, Thinking vs. Feeling, Judging vs. Perceiving):\n\n"
+    "(Introvert vs. Extrovert, Intuition vs. Sensing, Thinking vs. Feeling, Judging vs. Perceiving along with the type A or T):\n\n"
     f"{prompt}")
         submitted = st.form_submit_button("Analyze")
         generated_text = llm(prompt_template)
